@@ -45,7 +45,7 @@ const FormPage = ({ onSubmit }) => {
       // console.log((4-timerMinutes)+":"+(59-timerSeconds));
       formData.timeTake=(4-timerMinutes)+":"+(59-timerSeconds);
       console.log(formData);
-      await axios.post('http://localhost:8000/api/v1/contactus',formData)
+      await axios.post('https://snippet-code.onrender.com/api/v1/contactus',formData)
       .then((res)=>{
         console.log(res);
         dispatch(addTodo(formData))
