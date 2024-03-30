@@ -41,7 +41,7 @@ const FormPage = ({ onSubmit }) => {
     const handleSubmit = async(e) => {
       e.preventDefault();
       // onSubmit(formData);
-      console.log(formData);
+      // console.log(formData);
       // console.log((4-timerMinutes)+":"+(59-timerSeconds));
       formData.timeTake=(4-timerMinutes)+":"+(59-timerSeconds);
       console.log(formData);
